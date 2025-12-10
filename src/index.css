@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #0d1117; /* Dark mode default for project */
+  color: #c9d1d9;
+}
