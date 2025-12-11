@@ -2,6 +2,8 @@
 
 Rapid Nova is a modern **Stock Assessment & RAG Application** built with React and Vite. It combines real-time financial data with advanced AI capabilities to provide intelligent stock insights.
 
+![Rapid Nova Dashboard](./assets/preview.png)
+
 ## ✨ Features
 
 - **Real-Time Market Data**: Fetches up-to-date stock quotes, company details, and market status using the **Massive API**.
