@@ -1,16 +1,64 @@
-# React + Vite
+# Rapid Nova 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Rapid Nova is a modern **Stock Assessment & RAG Application** built with React and Vite. It combines real-time financial data with advanced AI capabilities to provide intelligent stock insights.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Real-Time Market Data**: Fetches up-to-date stock quotes, company details, and market status using the **Massive API**.
+- **AI-Powered Insights (RAG)**: Integrated **DeepSeek AI** chat interface that uses Retrieval-Augmented Generation (RAG) to answer questions based on the current market data context.
+- **Interactive Dashboard**: Clean, responsive UI featuring stock tiles and detailed charts powered by **Recharts**.
+- **Dynamic Visuals**: Immersive background effects and polished tailored aesthetics using **TailwindCSS**.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19, Vite
+- **Styling**: TailwindCSS
+- **Charts**: Recharts
+- **AI/LLM**: DeepSeek API
+- **Data Provider**: Massive API (Polygon.io compatible)
+- **Markdown**: React Markdown
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js installed on your machine.
+- API Keys for **Massive** (Data) and **DeepSeek** (AI).
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd rapid-nova
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment Variables:**
+    Create a `.env` file in the root directory and add your keys:
+    ```env
+    VITE_MASSIVE_API_KEY=your_massive_api_key_here
+    VITE_DEEPSEEK_API_KEY=your_deepseek_api_key_here
+    ```
+
+    > [!IMPORTANT]
+    > **Security Note:** Ensure your `.env` file is included in your `.gitignore` to prevent exposing your secrets. If you previously committed it, remove it from the git index with `git rm --cached .env`.
+
+4.  **Run the application:**
+    ```bash
+    npm run dev
+    ```
+
+## 📂 Project Structure
+
+- `src/components`: UI components (Dashboard, ChatInterface, StockDetails, etc.)
+- `src/services`: API integration logic (Massive & DeepSeek services).
+- `src/App.jsx`: Main application layout and state management.
+
+---
+
+*Built for the Future of Financial Intelligence.*
